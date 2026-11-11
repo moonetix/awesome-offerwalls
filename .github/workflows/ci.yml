@@ -1,0 +1,29 @@
+name: Links
+
+on:
+  push:
+    branches: [main]
+    paths: [README.md, scripts/check-links.mjs, .github/workflows/ci.yml]
+  pull_request:
+    paths: [README.md, scripts/check-links.mjs, .github/workflows/ci.yml]
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: links-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-links.mjs README.md

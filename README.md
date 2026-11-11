@@ -1,5 +1,6 @@
 # Awesome Offerwalls
 
+[![Links](https://github.com/moonetix/awesome-offerwalls/actions/workflows/ci.yml/badge.svg)](https://github.com/moonetix/awesome-offerwalls/actions/workflows/ci.yml)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![Maintained by Moonetix](https://img.shields.io/badge/maintained%20by-Moonetix-004ABB)](https://moonetix.com)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)

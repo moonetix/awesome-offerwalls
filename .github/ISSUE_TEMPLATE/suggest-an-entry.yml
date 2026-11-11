@@ -1,0 +1,72 @@
+name: Suggest an entry
+description: Propose an offerwall network, SDK, guide, tool or platform rule for the list.
+title: "Add: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](https://github.com/moonetix/awesome-offerwalls/blob/main/CONTRIBUTING.md) first. A pull request that edits README.md directly is just as welcome.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Example Rewards
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      description: The provider's own site or docs. No affiliate links, referral codes, tracking parameters or URL shorteners.
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Offerwall networks
+        - SDKs and integrations
+        - Guides
+        - Free tools
+        - Platform rules
+        - Postback and security
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Entry
+      description: "One neutral, factual sentence based on the provider's own site. No superlatives, earnings claims or comparisons."
+      placeholder: "- [Example Rewards](https://example.com) - Survey wall for apps and websites."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: What it does for publishers who reward users for completed offers.
+    validations:
+      required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Affiliation
+      options:
+        - I do not work for this company
+        - I work for this company
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checks
+      options:
+        - label: The link returns HTTP 200 and the product is available today.
+          required: true
+        - label: It rewards completed offers only, not ratings, reviews, joins, invites, likes or other engagement, and it does not target users under 16.
+          required: true
+        - label: US English, no emojis, and a plain hyphen instead of em or en dashes.
+          required: true

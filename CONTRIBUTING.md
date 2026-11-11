@@ -18,4 +18,6 @@ Thanks for helping. This list stays useful only if every entry is accurate, so p
 2. Add one entry per pull request when you can, and say in the description why it belongs.
 3. If you work for the company you are adding, say so in the pull request.
 
+Not ready to open a pull request? Use the [Suggest an entry](https://github.com/moonetix/awesome-offerwalls/issues/new?template=suggest-an-entry.yml) issue form.
+
 By contributing, you agree that your contribution is released under [CC0 1.0](LICENSE).
