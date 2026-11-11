@@ -38,12 +38,7 @@ New to offerwalls? These five pages cover most of what you need on day one.
 
 ## Offerwall networks
 
-*Maintained by Moonetix, so we list it first.*
-
 - [Moonetix](https://moonetix.com) - Pay-per-result affiliate network with a hosted offerwall (link, iframe, floating button), an Offers API, and SDKs for Android, iOS, Flutter, React Native and Unity.
-
-Other networks, in alphabetical order:
-
 - [AdGem](https://adgem.com) - Offerwall and rewarded video ad units for app publishers.
 - [adjoe Playtime](https://adjoe.io/solutions/monetize-your-app/playtime/) - Offerwall that rewards users for the time they spend in advertised apps.
 - [BitLabs](https://bitlabs.ai) - Rewarded surveys, games, shopping and offers for apps and websites, part of Prodege.
@@ -190,7 +185,7 @@ Open source handlers and starters (sibling repos):
 
 ## Contributing
 
-Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. In short: official links only, one neutral line per entry, alphabetical order after Moonetix.
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. In short: official links only, one neutral line per entry, alphabetical order.
 
 ## License
 

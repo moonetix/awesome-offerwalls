@@ -6,7 +6,7 @@ Thanks for helping. This list stays useful only if every entry is accurate, so p
 
 1. **Official links only.** Link to the provider's or platform's own site or docs. No affiliate links, referral codes, tracking parameters, URL shorteners, or third-party reviews.
 2. **One neutral line per entry.** Format: `- [Name](https://link) - Description.` Say what it is, in one short factual sentence based on the provider's own site. No "best", no superlatives, no earnings or payout claims, no comparisons.
-3. **Alphabetical order.** Within each section, sort entries A to Z, ignoring case. In Offerwall networks, Moonetix stays first because Moonetix maintains this list; everything after it is alphabetical.
+3. **Alphabetical order.** Within each section, sort entries A to Z, ignoring case.
 4. **Real and live.** The link must return HTTP 200 and the product must be available today. Entries that stop working are removed.
 5. **On topic.** Offerwalls, rewarded offers and surveys, their SDKs and integrations, postback handling, and platform rules that apply to rewards. General ad networks without an offerwall belong elsewhere.
 6. **Rewards for completed offers only.** Do not add tools or guides that reward ratings, reviews, joins, invites, likes, or other engagement, or that target users under 16.
