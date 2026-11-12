@@ -3,11 +3,9 @@ name: Links
 on:
   push:
     branches: [main]
-    paths: [README.md, scripts/check-links.mjs, .github/workflows/ci.yml]
+    paths: [README.md, 'scripts/**', .github/workflows/ci.yml]
   pull_request:
-    paths: [README.md, scripts/check-links.mjs, .github/workflows/ci.yml]
-  schedule:
-    - cron: '17 6 * * 1'
+    paths: [README.md, 'scripts/**', .github/workflows/ci.yml]
   workflow_dispatch:
 
 permissions:
@@ -26,4 +24,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Tests for the link check and issue scripts
+        run: node --test 'scripts/*.test.mjs'
       - run: node scripts/check-links.mjs README.md
