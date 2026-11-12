@@ -2,7 +2,7 @@
 // Checks every http(s) link in a Markdown file, one request per second.
 // Node 22, no dependencies.
 //
-//   node scripts/check-links.mjs [README.md] [--delay=1000]
+//   node scripts/check-links.mjs [README.md] [--delay=1000] [--report=broken.md]
 //
 // ok    2xx, directly or after redirects
 // warn  401, 403, 429, 999 or a timeout: the site turns away automated clients
@@ -13,11 +13,14 @@
 // from datacenter IPs, including GitHub's runners. A removed page still fails.
 
 import { appendFile, readFile } from 'node:fs/promises';
+import { writeReport } from './link-report.mjs';
+import { runUrl } from './github-issue.mjs';
 
 const args = process.argv.slice(2);
 const file = args.find((a) => !a.startsWith('--')) ?? 'README.md';
 const delayArg = args.find((a) => a.startsWith('--delay='));
 const delayMs = delayArg ? Number(delayArg.slice(8)) : 1000;
+const reportArg = args.find((a) => a.startsWith('--report='));
 
 const USER_AGENT = 'Mozilla/5.0 (compatible; awesome-offerwalls-link-check; +https://github.com/moonetix/awesome-offerwalls)';
 const TIMEOUT_MS = 20000;
@@ -99,5 +102,8 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   const table = rows.length ? ['| Result | Status | Link |', '| --- | --- | --- |', ...rows].join('\n') : 'All links answered 2xx.';
   await appendFile(process.env.GITHUB_STEP_SUMMARY, `## Link check\n\n${urls.length} links checked.\n\n${table}\n`);
 }
+
+// --report writes the issue body for the scheduled workflow, or deletes it when nothing failed.
+if (reportArg) writeReport(reportArg.slice(9), results, { run: runUrl() });
 
 process.exit(of('fail').length ? 1 : 0);
