@@ -73,9 +73,24 @@ Official Moonetix docs for each integration. All of them use the same app keys a
 Open source starters:
 
 - [offerwall-nextjs-starter](https://github.com/moonetix/offerwall-nextjs-starter) - Next.js App Router: signed link, Earn page, verified postback route.
+- [offerwall-laravel](https://github.com/moonetix/offerwall-laravel) - Laravel app with an Earn page and a postback route that credits each offer once.
+- [offerwall-django](https://github.com/moonetix/offerwall-django) - Django app with an Earn page and a postback view that credits each offer once.
 - [telegram-mini-app-offerwall](https://github.com/moonetix/telegram-mini-app-offerwall) - Offerwall inside a Telegram Mini App.
 - [discord-rewards-bot](https://github.com/moonetix/discord-rewards-bot) - Discord bot that credits completed offers.
 - [moonetix-offerwall-wordpress](https://github.com/moonetix/moonetix-offerwall-wordpress) - WordPress plugin source.
+- [offerwall-express](https://github.com/moonetix/offerwall-express) - Express 5 on Node 22: signed link, `node:sqlite` ledger, postbacks credited once.
+- [offerwall-vue-nuxt](https://github.com/moonetix/offerwall-vue-nuxt) - Nuxt 4: signed link from a server route and a verified postback route.
+- [offerwall-react-vite](https://github.com/moonetix/offerwall-react-vite) - React and Vite front end with a small Node.js backend for links and postbacks.
+- [offerwall-firebase-functions](https://github.com/moonetix/offerwall-firebase-functions) - Cloud Functions (2nd gen): signed link callable and a Firestore postback that credits once.
+- [offerwall-supabase](https://github.com/moonetix/offerwall-supabase) - Supabase Edge Functions and SQL with an atomic, RLS-safe postback.
+- [rewards-site-starter](https://github.com/moonetix/rewards-site-starter) - Plain PHP and SQLite rewards site with accounts, holds and manual payouts.
+- [offerwall-flutter-example](https://github.com/moonetix/offerwall-flutter-example) - Flutter app with the Moonetix plugin and a server for sessions and postbacks.
+- [offerwall-react-native-example](https://github.com/moonetix/offerwall-react-native-example) - React Native and Expo app with server-created sessions.
+- [offerwall-unity-example](https://github.com/moonetix/offerwall-unity-example) - Unity sample with the Moonetix plugin and a coin HUD.
+- [offerwall-godot](https://github.com/moonetix/offerwall-godot) - Godot 4 game that opens a server-signed link, no SDK.
+- [offerwall-html5-game](https://github.com/moonetix/offerwall-html5-game) - Phaser 3 browser game with an Earn coins pop-up.
+- [offerwall-chrome-extension](https://github.com/moonetix/offerwall-chrome-extension) - Manifest V3 extension that opens the offerwall in a new tab, no remote code.
+- [offerwall-electron](https://github.com/moonetix/offerwall-electron) - Electron app with a sandboxed renderer and a locked-down wall window.
 
 ## Guides
 
@@ -118,6 +133,10 @@ From [Moonetix Academy](https://moonetix.com/academy).
 - [How offerwall payouts are calculated](https://moonetix.com/academy/earnings/how-offerwall-payouts-are-calculated) - From advertiser payout to user reward.
 - [Publisher earnings and reversals](https://moonetix.com/academy/earnings/publisher-earnings-and-reversals) - What a reversal does to your balance.
 - [Why users do not finish offers](https://moonetix.com/academy/monetization/why-users-dont-finish-offers) - Common causes and fixes.
+- [reward-economy-kit](https://github.com/moonetix/reward-economy-kit) - Integer-only payout to points math, reversals and cash-out pricing for JavaScript and PHP.
+- [country-tiers](https://github.com/moonetix/country-tiers) - Tier 1, 2 and 3 country lists as JSON and CSV with ISO codes and World Bank income groups.
+- [referral-engine](https://github.com/moonetix/referral-engine) - Referral codes, attribution and a commission ledger that survives clawbacks, in JavaScript and PHP.
+- [gamification-kit](https://github.com/moonetix/gamification-kit) - Streaks, XP levels, quests and leaderboards that stay correct across time zones and DST.
 
 ### Traffic quality
 
@@ -126,6 +145,9 @@ From [Moonetix Academy](https://moonetix.com/academy).
 - [Stop fake sign-ups on a rewards site](https://moonetix.com/academy/traffic-quality/stop-fake-signups-rewards-site)
 - [Prevent referral fraud](https://moonetix.com/academy/traffic-quality/prevent-referral-fraud)
 - [Promote your offerwall within the rules](https://moonetix.com/academy/traffic-quality/promote-your-offerwall-rules)
+- [offerwall-fraud-playbook](https://github.com/moonetix/offerwall-fraud-playbook) - Vendor-neutral fraud playbook for rewards publishers, with tested SQL, Node.js and PHP.
+- [datacenter-ip-ranges](https://github.com/moonetix/datacenter-ip-ranges) - Cloud, hosting and CDN IP ranges from official provider feeds, rebuilt daily.
+- [signup-guard](https://github.com/moonetix/signup-guard) - Explainable sign-up risk checks for Node.js and PHP: disposable emails, email normalization, datacenter and Tor IPs.
 
 ## Free tools
 
@@ -179,6 +201,8 @@ A postback is the server-to-server call that tells you a user completed an offer
 Open source handlers and starters (sibling repos):
 
 - [offerwall-postback-handlers](https://github.com/moonetix/offerwall-postback-handlers) - Tested postback handlers in several languages.
+- [postback-tester](https://github.com/moonetix/postback-tester) - Sends signed, replayed, reversed and forged test postbacks to your endpoint and reports which checks it passes.
+- [affiliate-postback-macros](https://github.com/moonetix/affiliate-postback-macros) - Postback macros, signatures and reversal rules for tracking platforms and offerwall networks, with sources.
 - [telegram-mini-app-offerwall](https://github.com/moonetix/telegram-mini-app-offerwall) - Telegram Mini App with a verified postback endpoint.
 - [discord-rewards-bot](https://github.com/moonetix/discord-rewards-bot) - Discord bot with a verified postback endpoint.
 - [offerwall-nextjs-starter](https://github.com/moonetix/offerwall-nextjs-starter) - Next.js postback Route Handler with pluggable storage.
@@ -186,7 +210,9 @@ Open source handlers and starters (sibling repos):
 
 ## Contributing
 
-Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. In short: official links only, one neutral line per entry, alphabetical order.
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. In short: official links only, one neutral line per entry, placed next to related entries.
+
+Every link is checked each Monday. Dead ones are listed in a single open issue until they are fixed.
 
 ## License
 
