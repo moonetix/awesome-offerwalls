@@ -79,6 +79,18 @@ Open source starters:
 - [discord-rewards-bot](https://github.com/moonetix/discord-rewards-bot) - Discord bot that credits completed offers.
 - [moonetix-offerwall-wordpress](https://github.com/moonetix/moonetix-offerwall-wordpress) - WordPress plugin source.
 - [offerwall-express](https://github.com/moonetix/offerwall-express) - Express 5 on Node 22: signed link, `node:sqlite` ledger, postbacks credited once.
+- [offerwall-vue-nuxt](https://github.com/moonetix/offerwall-vue-nuxt) - Nuxt 4: signed link from a server route and a verified postback route.
+- [offerwall-react-vite](https://github.com/moonetix/offerwall-react-vite) - React and Vite front end with a small Node.js backend for links and postbacks.
+- [offerwall-firebase-functions](https://github.com/moonetix/offerwall-firebase-functions) - Cloud Functions (2nd gen): signed link callable and a Firestore postback that credits once.
+- [offerwall-supabase](https://github.com/moonetix/offerwall-supabase) - Supabase Edge Functions and SQL with an atomic, RLS-safe postback.
+- [rewards-site-starter](https://github.com/moonetix/rewards-site-starter) - Plain PHP and SQLite rewards site with accounts, holds and manual payouts.
+- [offerwall-flutter-example](https://github.com/moonetix/offerwall-flutter-example) - Flutter app with the Moonetix plugin and a server for sessions and postbacks.
+- [offerwall-react-native-example](https://github.com/moonetix/offerwall-react-native-example) - React Native and Expo app with server-created sessions.
+- [offerwall-unity-example](https://github.com/moonetix/offerwall-unity-example) - Unity sample with the Moonetix plugin and a coin HUD.
+- [offerwall-godot](https://github.com/moonetix/offerwall-godot) - Godot 4 game that opens a server-signed link, no SDK.
+- [offerwall-html5-game](https://github.com/moonetix/offerwall-html5-game) - Phaser 3 browser game with an Earn coins pop-up.
+- [offerwall-chrome-extension](https://github.com/moonetix/offerwall-chrome-extension) - Manifest V3 extension that opens the offerwall in a new tab, no remote code.
+- [offerwall-electron](https://github.com/moonetix/offerwall-electron) - Electron app with a sandboxed renderer and a locked-down wall window.
 
 ## Guides
 
