@@ -4,11 +4,11 @@ Thanks for helping. This list stays useful only if every entry is accurate, so p
 
 ## Rules
 
-1. **Official links only.** Link to the provider's or platform's own site or docs. No affiliate links, referral codes, tracking parameters, URL shorteners, or third-party reviews.
+1. **Official links only.** Link to the provider's, platform's or author's own site, docs or repository. No affiliate links, referral codes, tracking parameters, URL shorteners, or third-party reviews.
 2. **One neutral line per entry.** Format: `- [Name](https://link) - Description.` Say what it is, in one short factual sentence based on the provider's own site. No "best", no superlatives, no earnings or payout claims, no comparisons.
-3. **Placement.** In Offerwall networks, insert new entries in A to Z order, ignoring case. The other sections are grouped by task, so add your entry next to the closest related one.
+3. **Placement.** In Offerwall networks, Docs by network, SDK repositories and sample apps, and Postback references by network, insert new entries in A to Z order, ignoring case. The other sections are grouped by task, so add your entry next to the closest related one.
 4. **Real and live.** The link must return HTTP 200 and the product must be available today. Entries that stop working are removed.
-5. **On topic.** Offerwalls, rewarded offers and surveys, their SDKs and integrations, postback handling, and platform rules that apply to rewards. General ad networks without an offerwall belong elsewhere.
+5. **On topic.** Offerwalls, rewarded offers and surveys, their SDKs and integrations, postback handling and testing, traffic quality, and platform rules that apply to rewards. Vendor-neutral references are welcome when they explain a technique the list covers, such as signature checks or idempotent crediting. General ad networks without an offerwall belong elsewhere.
 6. **Rewards for completed offers only.** Do not add tools or guides that reward ratings, reviews, joins, invites, likes, or other engagement, or that target users under 16.
 7. **Style.** US English, short sentences, no emojis, no em or en dashes (use a plain hyphen).
 
